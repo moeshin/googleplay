@@ -56,6 +56,9 @@ var DefaultConfig = Config{
       "armeabi-v7a",
       // com.exnoa.misttraingirls
       "arm64-v8a",
+      
+      // "x86_64"
+      // "armeabi"
    },
    SystemSharedLibrary: []string{
       // com.miui.weather2
@@ -78,8 +81,18 @@ type Config struct {
    NativePlatform []string
    // this can be 0, but it must be included:
    Navigation uint64
+
+   /* 120: ldpi
+    * 160: mdpi
+    * 240: hdpi
+    * 320: xhdpi
+    * 480: xxhdpi
+    * 640: xxxhdpi
+    * 213: tvdpi
+    */
    // this can be 0, but it must be included:
    ScreenDensity uint64
+
    // this can be 0, but it must be included:
    ScreenLayout uint64
    SystemSharedLibrary []string
